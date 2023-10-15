@@ -1,0 +1,101 @@
+:root{
+    --fontsize-primary-h1:20px;
+    --fontsize-h1:17px;
+    --fontsize-p:27px;
+    --line-height-p:32px;
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+nav{
+    background-color: #3c3c3c;
+    border-bottom-color: #fff;
+    padding-bottom: 10px !important;
+}
+.navbar> .container-fluid .navbar-brand{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #F8F7F9;
+}
+.navbar> .container-fluid .navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    color: #F8F7F9;
+}
+.navbar {
+    background-color: transparent !important;
+}
+#home > div > div > div > h1{
+    font-size: var(--fontsize-primary-h1);
+    color: #f2f2f2;
+    font-family: serif;
+    font-weight: bold;
+}
+#home > div > div > div > h3{
+    color: #f2f2f2;
+    font-family: serif;
+}
+#home > div > div > div > p{
+    font-size: var(--fontsize-p);
+    line-height: var(--line-height-p);
+    color: #f2f2f2;
+    font-family: serif;
+
+}
+#servicios{
+    background-color: #f2f2f2;
+}
+#servicios > div > div > div > h1{
+    font-size: var(--fontsize-h1);
+    color: #333;
+    font-family: serif;
+    font-weight: bold;
+}
+#servicios > div > div > div > p{
+    font-size: var(--fontsize-p);
+    line-height: var(--line-height-p);
+    color: #333;
+    font-family: serif;
+}
+#servicios > div > div > div > img{
+    object-fit: cover;
+    
+}
+#nosotros > div > div > div > h1{
+    font-size: var(--fontsize-h1);
+    color: #333;
+    font-family: serif;
+    font-weight: bold;
+}
+#nosotros > div > div > div > p{
+    font-size: var(--fontsize-p);
+    line-height: var(--line-height-p);
+    color: #333;
+    font-family: serif;
+}
+#contacto > div > div > div > h1{
+    font-size: var(--fontsize-h1);
+    color: #333;
+    font-family: serif;
+    font-weight: bold;
+}
+
+footer{
+    color: #F8F7F9;
+}
+header, section{
+    padding-top: 60px;
+}
+
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/fo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
