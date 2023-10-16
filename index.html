@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/style.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.min.css">
     
     <title>Contrata</title>
   </head>
@@ -37,41 +37,54 @@
     </nav>
     <header id="home">
         <div class="container-fluid">
-            <div class="row vh-100">
-                <div class="col-12 d-flex align-items-center ">
-                    <h1>Optired <br/>Telecomunicaciones</h1>
-                    <br>
+            <div class="row vh-100 justify-content-center align-items-center">
+                <div class="col text-center">
+                    <h1 class="mb-5">Optired</h1>
+                    <h2>Expertos en <br> Telecomunicaciones</h2>
                 </div>
-                <div class="col-12 d-flex">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque <br> ipsum qui aliquid exercitationem repellendus. <br> Expedita saepe quia voluptatum mollitia libero atque repellat minus, sed officia. Aperiam aliquam debitis ea.</p>
-                </div>
-
+               
             </div>
         </div>
     </header>
     <section id="servicios">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 col-lg-12 d-flex-column align-items-center">
+                <div class="col-sm-12">
                     <h1>Servicios</h1>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut perferendis dolore, explicabo minima eos voluptate deserunt? Praesentium pariatur ratione porro debitis neque dicta esse aut omnis facere. Amet, accusamus.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo rerum vitae, porro, numquam dolorem autem quo quod laborum aperiam velit excepturi eligendi veritatis, voluptas mollitia iste iure beatae repellendus est?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque laudantium delectus obcaecati. Porro ut incidunt doloremque molestias sunt, iste explicabo odio veniam? Molestias odit dignissimos quis, ea quod voluptas!</p>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="hstack gap-3">
+                                <div class="p-3">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quo obcaecati qui blanditiis fuga, tenetur facilis atque perferendis perspiciatis laboriosam numquam illo. Blanditiis a velit ducimus adipisci? Rem, magnam reprehenderit!</p>
+                                </div>
+                                <hr class="divider">
+                                <div class="p-3">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis porro soluta distinctio, blanditiis molestiae dicta et sit corrupti itaque, iusto veniam repellendus inventore dolore mollitia quisquam quasi fugit eos voluptate!</p>
+                                </div>
+                                <hr class="divider">
+                                <div class="p-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate asperiores incidunt quaerat, labore nam beatae molestias sed alias sit accusamus vitae, voluptas natus non! Enim excepturi laborum ipsum fuga consequatur!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-start">
+                            <img class="img-fluid mt-4" style="object-fit: contain;" src="img/servicios.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-12 d-flex justify-content-center">
-                    <img class="img-fluid" style="object-fit: contain;" src="img/servicios.jpg" alt="">
-                </div>
+                
             </div>
         </div>
     </section>
     <section id="nosotros">
         <div class="container-fluid">
             <div class="row vh-100">
-                <div class="col-sm-12 col-lg-12 d-flex-column align-items-center">
+                <div class="col-sm-12 col-lg-12">
                     <h1>Nosotros</h1>
                     <br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore exercitationem quis illo dolores repellendus? Exercitationem, officia. Quas quod esse est totam omnis voluptatem amet fugit. Id qui voluptatibus quidem omnis!</p>
+                    <hr class="divider">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam voluptatem quaerat velit molestias numquam aspernatur consequuntur earum, soluta praesentium atque amet saepe dolorum aliquam id ratione libero? Necessitatibus, reiciendis.</p>
                 </div>
             </div>
         </div>
@@ -82,18 +95,43 @@
                 <div class="col">
                     <h1>Contacto</h1>
                 </div>
-            </div>
+                <div class="col-12">
+                    <div class="row d-flex flex-column">
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-phone fa-2xl"></i>
+                            <div>
+                                <span>Tel&eacute;fono</span>
+                                <br>
+                                <span>+35133322323</span>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-envelope fa-2xl"></i>
+                            <div>
+                                <span>contacto@optired.com</span>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-location-dot fa-2xl"></i>
+                            <div>
+                                <span>C&oacute;rdoba</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
         </div>
     </section>
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col text-center">
-                    &copy; contrata
+                   <span style="width: 100px; height: 100px;"> &copy; Optired </span>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://kit.fontawesome.com/c7a6fb9fb8.js" crossorigin="anonymous"></script>
+</body>
 </html>
