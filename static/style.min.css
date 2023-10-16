@@ -2,7 +2,7 @@
 
 @media (max-width: 575.98px) {
     :root{
-        --fontsize-primary-h1:37px;
+        --fontsize-primary-h1:57px;
         --fontsize-h1:33px;
         --fontsize-p:26px;
         --line-height-p:42px;
@@ -10,22 +10,22 @@
  }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (min-width: 576px) and (max-width: 767.98px) { 
     :root{
         --fontsize-primary-h1:68px;
         --fontsize-h1:60px;
-        --fontsize-p:47px;
+        --fontsize-p:40px;
         --line-height-p:74px;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {  
+@media (min-width: 768px) and (max-width: 991.98px) {  
     :root{
         --fontsize-primary-h1:76px;
         --fontsize-h1:68px;
-        --fontsize-p:54px;
-        --line-height-p:85px;
+        --fontsize-p:45px;
+        --line-height-p:74px;
     }
 }
 
