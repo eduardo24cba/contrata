@@ -4,6 +4,7 @@
     --fontsize-p:27px;
     --line-height-p:32px;
     --margin-section-h1:15px;
+    --color-h1:#0d1321;
 }
 
 html, body{
@@ -12,7 +13,7 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
+    background-color: #f3f5fc;
 }
 nav{
     background-color: #3c3c3c;
@@ -31,7 +32,12 @@ nav{
 .navbar {
     background-color: transparent !important;
 }
-
+.navbarTransparent {
+    background-color: transparent !important;
+}
+.navbarTheme{
+    background: linear-gradient(270deg, #0D1321, #141D2E);
+}
 .divider{
     width: 50%;
     margin: 0 auto;
@@ -60,12 +66,9 @@ nav{
     font-family: serif;
 
 }
-#servicios{
-    background-color: #f2f2f2;
-}
 #servicios > div > div > div > h1{
     font-size: var(--fontsize-h1);
-    color: #333;
+    color: var(--color-h1);
     font-family: serif;
     font-weight: bold;
     margin-left: var(--margin-section-h1);
@@ -82,7 +85,7 @@ nav{
 }
 #nosotros > div > div > div > h1{
     font-size: var(--fontsize-h1);
-    color: #333;
+    color: var(--color-h1);
     font-family: serif;
     font-weight: bold;
     margin-left: var(--margin-section-h1);
@@ -96,7 +99,7 @@ nav{
 }
 #contacto > div > div > div > h1{
     font-size: var(--fontsize-h1);
-    color:#333;
+    color: var(--color-h1);
     font-family: serif;
     font-weight: bold;
     margin-left: var(--margin-section-h1);
@@ -107,7 +110,11 @@ nav{
     font-family: "Sofia Sans";
     font-size: 28px;
 }
-
+/*#contacto > div > div > div> div> div{
+    height: 250px;
+    background-color: red;
+    border-color: green;
+}*/
 #contacto > div > div > div > div > div{
     margin: 0px;
 }
