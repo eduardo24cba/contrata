@@ -1,10 +1,13 @@
 :root{
     --fontsize-primary-h1:72px;
-    --fontsize-h1:57px;
+    --fontsize-h2:45px;
     --fontsize-p:27px;
     --line-height-p:32px;
     --margin-section-h1:15px;
     --color-h1:#0d1321;
+    --family-weight:"lighter";
+    --family-font: "serif";
+    --bg: #fc4c02;
 }
 
 html, body{
@@ -13,7 +16,7 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    background-color: #f3f5fc;
+    background-color: #f2f2f2;
 }
 nav{
     background-color: #3c3c3c;
@@ -29,18 +32,40 @@ nav{
     text-decoration: none;
     color: #F8F7F9;
 }
-.navbar {
-    background-color: transparent !important;
-}
 .navbarTransparent {
     background-color: transparent !important;
 }
 .navbarTheme{
     background: linear-gradient(270deg, #0D1321, #141D2E);
+    background: -webkit-linear-gradient(#0D1321,#141D2E);
+    background: -moz-linear-gradient(#0D1321,#141D2E);
+    background: -o-linear-gradient(#0D1321,#141D2E); 
+    opacity: 0.8;
+
+    -webkit-transition:all 0.4s linear; 
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition:all 0.4s linear; 
+}
+.navbarTheme .divider{
+    color: #f2f2f2;
+}
+.nav-item .active{
+    color:#406eb7 !important;
 }
 .divider{
     width: 50%;
     margin: 0 auto;
+}
+.line-divider{
+    background-image: linear-gradient(#8E7C93 ,#8E7C93);
+    /*background-image: -webkit-linear-gradient(#648dcc,#648dcc);
+    background-image: -moz-linear-gradient(#648dcc,#648dcc);
+    background-image: -o-linear-gradient(#648dcc,#648dcc);     
+    */
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 50% 2px;
 }
 #home > div > div > div > h1{
     font-size: var(--fontsize-primary-h1);
@@ -66,11 +91,11 @@ nav{
     font-family: serif;
 
 }
-#servicios > div > div > div > h1{
-    font-size: var(--fontsize-h1);
+#servicios > div > div > div > h2{
+    font-size: var(--fontsize-h2);
     color: var(--color-h1);
-    font-family: serif;
-    font-weight: bold;
+    font-family: var(--family-font);
+    font-weight: var(--family-weight);
     margin-left: var(--margin-section-h1);
 }
 #servicios > div > div > div > div > div > div > div > p{
@@ -79,15 +104,21 @@ nav{
     color: #333;
     font-family: serif;
 }
+#servicios > div > div {
+    border-top-color: red !important;
+}
 #servicios > div > div > div > img{
     object-fit: cover;
     
 }
-#nosotros > div > div > div > h1{
-    font-size: var(--fontsize-h1);
+#nosotros{
+    padding-bottom: 60px;
+}
+#nosotros > div > div > div > h2{
+    font-size: var(--fontsize-h2);
     color: var(--color-h1);
-    font-family: serif;
-    font-weight: bold;
+    font-family: var(--family-font);
+    font-weight: var(--family-weight);
     margin-left: var(--margin-section-h1);
 }
 #nosotros > div > div > div > p{
@@ -97,30 +128,32 @@ nav{
     font-family: serif;
     margin-left: 20px;
 }
-#contacto > div > div > div > h1{
-    font-size: var(--fontsize-h1);
-    color: var(--color-h1);
-    font-family: serif;
-    font-weight: bold;
+#contacto > div > div > div > h2{
+    font-size: var(--fontsize-h2);
+    color: #f2f2f2;
+    font-family: var(--family-font);
+    font-weight: var(--family-weight);
     margin-left: var(--margin-section-h1);
 }
-#contacto > div > div > div > div > div > div > span{
+#contacto{
+    background-color: #0D1321;
+}
+#contacto > div > div > div > div > div >  span{
     font-family: serif;
-    margin-left: 15px;
     font-family: "Sofia Sans";
     font-size: 28px;
+    color: #f2f2f2;
 }
 /*#contacto > div > div > div> div> div{
     height: 250px;
     background-color: red;
     border-color: green;
 }*/
-#contacto > div > div > div > div > div{
-    margin: 0px;
-}
+
 footer .col{
     height: 40px;
-    color: #333;
+    color: #f2f2f2;
+    background-color: #0D1321;
 }
 header, section{
     padding-top: 60px;
@@ -131,3 +164,88 @@ header, section{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgb(242, 242, 242, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>");
+}
+.strava {
+position: absolute;
+width: 50vmin;
+aspect-ratio: 1;
+background: var(--bg);
+border-radius: 20px;
+margin: auto;
+.top {
+    transform: scaleX(0.5);
+    width: 87%;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    margin-left: 1.4%;
+    &:before,
+    &:after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    margin-top: 26%;
+    }
+    &:before {
+    width: 64%;
+    background: linear-gradient(
+        to right bottom,
+        white,
+        white 50%,
+        transparent 50%,
+        transparent
+    );
+    }
+    &:after {
+    width: 26%;
+    background: linear-gradient(
+        to right bottom,
+        var(--bg),
+        var(--bg) 50%,
+        transparent 50%,
+        transparent
+    );
+    }
+}
+.bottom {
+    transform: scaleX(0.54);
+    width: 100%;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    margin-left: 8.4%;
+    margin-top: -82%;
+    &:before,
+    &:after {
+    content: "";
+    position: absolute;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    }
+    &:before {
+    width: 39%;
+    background: linear-gradient(
+        to left top,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.6) 50%,
+        transparent 50%,
+        transparent
+    );
+    }
+    &:after {
+    width: 15%;
+    background: linear-gradient(
+        to left top,
+        var(--bg),
+        var(--bg) 50%,
+        transparent 50%,
+        transparent
+    );
+    }
+}
+}
+  
