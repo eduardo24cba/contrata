@@ -138,7 +138,7 @@ nav{
 #contacto{
     background-color: #0D1321;
 }
-#contacto > div > div > div > div > div >  span{
+#contacto > div > div > div > div > div >  span,i,h3{
     font-family: serif;
     font-family: "Sofia Sans";
     font-size: 28px;
