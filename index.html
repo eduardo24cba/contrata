@@ -37,14 +37,16 @@
 
         </div>
     </nav>
+    <div id="backButton" class="d-none position-fixed back-to-top rounded-circle">
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
     <header id="home">
         <div class="container-fluid">
             <div class="row vh-100 justify-content-center align-items-center">
                 <div class="col text-center">
                     <h1 class="mb-5">Optired</h1>
                     <h2>Expertos en <br> Telecomunicaciones</h2>
-                </div>
-               
+                </div>     
             </div>
         </div>
     </header>
@@ -52,7 +54,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2 class="line-divider">Servicios</h2>
+                    <!--<h2 class="line-divider">Servicios</h2>-->
+                    <div class="divider2"><h2>Servicios</h2></div>
+
                     <div class="row">
                         <div class="col-sm-12 col-lg-6">
                             <div class="hstack gap-3">
@@ -69,12 +73,48 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-start">
-                            <img class="img-fluid mt-4" style="object-fit: contain;" src="img/servicios.jpg" alt="">
+                        <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-around">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 mt-2">
+                                    <div class="position-relative abstract">
+                                        <img class="img-fluid" style="object-fit: contain;" src="img/contrata1.jpg" alt="">
+                                        <i class="fa-solid fa-expand d-none"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 mt-2">
+                                    <div class="position-relative abstract mt-3">
+                                        <img id="mosaico-1" class="img-fluid" src="img/contrata3.jpg" alt="">
+                                        <i class="fa-solid fa-expand d-none"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 mt-2">
+                                    <div class="position-relative abstract mt-3">
+                                        <img id="mosaico-2" class="img-fluid" src="img/contrata2.jpg" alt="">
+                                        <i class="fa-solid fa-expand d-none"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <!--<img class="rounded-circle " style="object-fit: cover; top: 80px;" src="img/servicios.jpg" alt="">
+                            <img class="rounded-circle " style="object-fit: cover; top: 130px;" src="img/servicios.jpg" alt="">
+
+                            
+                            <div class="row">
+                                <div class="col-12">
+                                    <img class="rounded-circle" style="object-fit: scale-down;" src="img/servicios.jpg" alt="">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <img class=" rounded-circle" style="object-fit: contain;" src="img/servicios.jpg" alt="">
+                                </div>
+                                <div class="col-12">
+                                    <img class="rounded-circle" style="object-fit: cover;" src="img/servicios.jpg" alt="">
+                                </div>
+                            </div>
+                            -->
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -82,7 +122,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-lg-12">
-                    <h2 class="line-divider">Nosotros</h2>
+                    <!--<h2 class="line-divider">Nosotros</h2>-->
+                    <div class="divider2"><h2>Nosotros</h2></div>
+                    
                     <br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore exercitationem quis illo dolores repellendus? Exercitationem, officia. Quas quod esse est totam omnis voluptatem amet fugit. Id qui voluptatibus quidem omnis!</p>
                     <hr class="divider">
@@ -101,7 +143,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h2 class="line-divider">Contacto</h2>
+                    <!--<h2 class="line-divider">Contacto</h2>-->
+                    <div class="divider2"><h2>Contacto</h2></div>
+
                 </div>
                 <div class="col-12 mt-5 text-center">
                     <h3>¡No dude en contactarnos!</h3>
@@ -133,6 +177,7 @@
                 <div class="col text-center">
                    <span> &copy; Optired 2023</span>
                 </div>
+
             </div>
         </div>
     </footer>
