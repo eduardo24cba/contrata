@@ -3,19 +3,28 @@
 @media (max-width: 575.98px) {
     :root{
         --fontsize-primary-h1:57px;
-        --fontsize-h1:33px;
-        --fontsize-p:26px;
+        --fontsize-h2:28px;
+        --fontsize-p:21px;
         --line-height-p:42px;
     }
+    #contacto > div > div > div > div > div > div > div > span{
+        font-size: 18px;
+    }
  }
+
+@media (max-width: 767.98px){
+    #mosaico-1, #mosaico-2{
+        margin-top: 20px;
+    }
+}
 
 /* Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
     :root{
         --fontsize-primary-h1:68px;
-        --fontsize-h1:60px;
-        --fontsize-p:40px;
-        --line-height-p:74px;
+        --fontsize-h2:28px;
+        --fontsize-p:21px;
+        --line-height-p:42px;
     }
 }
 
@@ -23,9 +32,9 @@
 @media (min-width: 768px) and (max-width: 991.98px) {  
     :root{
         --fontsize-primary-h1:76px;
-        --fontsize-h1:68px;
-        --fontsize-p:45px;
-        --line-height-p:74px;
+        --fontsize-h2:35px;
+        --fontsize-p:28px;
+        --line-height-p:49px;
     }
 }
 
@@ -45,6 +54,9 @@
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+    #mosaico-1, #mosaico-2{
+        height: auto;        
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
