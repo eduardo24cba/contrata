@@ -1,6 +1,7 @@
 const navbar = document.querySelector("nav");
 const servicios = document.getElementById("servicios");
 const nosotros = document.getElementById("nosotros");
+const clientes = document.getElementById("clientes");
 const contacto = document.getElementById("contacto");
 
 
@@ -23,23 +24,25 @@ function removeClass(links){
     links.forEach((e)=> {if(e.getAttribute("class").includes("active"))e.classList.remove("active")});
 }
 function checkSection(){
-    let links = document.querySelectorAll("a");
+    let links = document.querySelectorAll(".navbar-nav a");
     let size = navbar.getBoundingClientRect().height + 30;
     if(servicios.getBoundingClientRect().top < size && servicios.getBoundingClientRect().bottom > 10){
-        if(links[1].getAttribute("class").includes("active"))return;
+        if(links[0].getAttribute("class").includes("active"))return;
         removeClass(links);
-        links[1].classList.add("active");
-        console.log("caso 1")
+        links[0].classList.add("active");
     }else if(nosotros.getBoundingClientRect().top < size && nosotros.getBoundingClientRect().bottom > 10){
+            if(links[1].getAttribute("class").includes("active"))return;
+            removeClass(links);
+            links[1].classList.add("active");
+    }else if(clientes.getBoundingClientRect().top < size && clientes.getBoundingClientRect().bottom > 10){
             if(links[2].getAttribute("class").includes("active"))return;
             removeClass(links);
             links[2].classList.add("active");
-            console.log("caso 2")
-    }else if(contacto.getBoundingClientRect().top < size && contacto.getBoundingClientRect().bottom > 10){
+        }
+        else if(contacto.getBoundingClientRect().top < size && contacto.getBoundingClientRect().bottom > 10){
             if(links[3].getAttribute("class").includes("active"))return;
             removeClass(links);
             links[3].classList.add("active");
-            console.log("caso 3")
         }
     else{
         removeClass(links);
